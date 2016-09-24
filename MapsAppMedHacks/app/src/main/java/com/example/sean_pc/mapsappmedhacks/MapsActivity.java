@@ -9,8 +9,12 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.kml.KmlContainer;
 import com.google.maps.android.kml.KmlLayer;
+<<<<<<< HEAD
 import com.google.maps.android.kml.KmlPlacemark;
 
+=======
+import com.google.maps.android.kml.*;
+>>>>>>> dfc8ce44aa2b6652127f3791213b7a74064d98a9
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -39,9 +43,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap)   {
         mMap = googleMap;
+<<<<<<< HEAD
         KmlLayer layer;
         KmlPlacemark pl;
         // Add a marker in Sydney and move the camera\
+=======
+
+        // Add a marker in Sydney and move the camera
+        KmlLayer layer= new KmlLayer(googleMap,R.raw.Pollen getApplicationContext());
+>>>>>>> dfc8ce44aa2b6652127f3791213b7a74064d98a9
         try{
          layer= new KmlLayer(googleMap, R.raw.Pollen, getApplicationContext();
 
@@ -53,6 +63,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             layer.removeLayerFromMap();
             System.out.println("xmlpull");
 
+        }
+        for(KmlPlacemark placemark: layer.getPlacemarks()){
+            if(layer.hasPlacemarks()) {
+                mMap.addMarker(new MarkerOptions().placemark);
+            }
         }
         for(KmlContainer container: layer.getContainers()){
             if(layer.hasContainers()){

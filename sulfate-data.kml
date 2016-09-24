@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Folder>
+	<name>sulfate-data.kmz</name>
+	<GroundOverlay>
+		<Icon>
+			<href>sulfate-data.png</href>
+		</Icon>
+		<LatLonBox>
+			<north>88.66666666666657</north>
+			<south>-88.66666666666667</south>
+			<east>-142.758620689655</east>
+			<west>158.7192118226602</west>
+		</LatLonBox>
+	</GroundOverlay>
+</Folder>
+</kml>
