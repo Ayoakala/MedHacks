@@ -11,7 +11,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.kml.KmlContainer;
 import com.google.maps.android.kml.KmlLayer;
-
+import com.google.maps.android.kml.*;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -42,13 +42,18 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        KmlLayer layer= new KmlLayer(googleMap,kmlInputStream, getApplicationContext());
+        KmlLayer layer= new KmlLayer(googleMap,R.raw.Pollen getApplicationContext());
         try{
             layer.addLayerToMap();
         }catch(java.io.IOException e){
             layer.removeLayerFromMap();
         }catch(org.xmlpull.v1.XmlPullParserException e){
             layer.removeLayerFromMap();
+        }
+        for(KmlPlacemark placemark: layer.getPlacemarks()){
+            if(layer.hasPlacemarks()) {
+                mMap.addMarker(new MarkerOptions().placemark);
+            }
         }
         for(KmlContainer container: layer.getContainers()){
             if(layer.hasContainers()){
