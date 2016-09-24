@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Pollen</name>
+	<open>1</open>
+	<Placemark id="1">
+		<name>WONDERKRATER WKRB3</name>
+		<description><![CDATA[<table><tr><td>NETWORK: POLLEN</td></tr><tr><td>INVESTIGATOR: SCOTT, L.</td></tr><tr><td>LATITUDE: -24.4333</td></tr><tr><td>LONGITUDE: 28.75</td></tr><tr><td>STUDY NAME: WONDERKRATER, SOUTH AFRICA 20,000 YEAR POLLEN DATA</td></tr><tr><td></td></tr><tr><td><a href="https://www.ncdc.noaa.gov/cdo/f?P=519:1:::::P1_STUDY_ID,P1_SITE_ID:13155,53233">Access Data</a></td></tr></table>]]></description>
+		<Point>
+			<coordinates>28.75,-24.43330014081674,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="2">
+		<name>KUISEB RIVER BASIN</name>
+		<description><![CDATA[<table><tr><td>NETWORK: POLLEN</td></tr><tr><td>INVESTIGATOR: SCOTT, L.</td></tr><tr><td>LATITUDE: -23.4167</td></tr><tr><td>LONGITUDE: 15.25</td></tr><tr><td>STUDY NAME: KUISEB RIVER BASIN, NAMIBIA 2000 YEAR HYRAX MIDDEN POLLEN DATA</td></tr><tr><td></td></tr><tr><td><a href="https://www.ncdc.noaa.gov/cdo/f?P=519:1:::::P1_STUDY_ID,P1_SITE_ID:13154,53232">Access Data</a></td></tr></table>]]></description>
+		<gx:balloonVisibility>1</gx:balloonVisibility>
+		<Point>
+			<coordinates>15.25,-23.41669985918327,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="3">
+		<name>BEAR LAKE UTAH/IDAHO</name>
+		<description><![CDATA[<table><tr><td>NETWORK: POLLEN</td></tr><tr><td>INVESTIGATOR: JIMÃ©NEZ-MORENO, G.</td></tr><tr><td>LATITUDE: 42.0</td></tr><tr><td>LONGITUDE: -111.0</td></tr><tr><td>STUDY NAME: ORBITAL- AND MILLENNIAL-SCALE VEGETATION AND CLIMATE CHANGES OF THE PAST 225 KA FROM BEAR LAKE, UTAH-IDAHO (USA).</td></tr><tr><td></td></tr><tr><td><a href="https://www.ncdc.noaa.gov/cdo/f?P=519:1:::::P1_STUDY_ID,P1_SITE_ID:6187,20653">Access Data</a></td></tr></table>]]></description>
+		<Point>
+			<coordinates>-111.3333001408167,42,0</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="4">
+		<name>CANOPUS HILL</name>
+		<description><![CDATA[<table><tr><td>NETWORK: POLLEN</td></tr><tr><td>INVESTIGATOR: TURNEY, C.S.M.</td></tr><tr><td>LATITUDE: -51.691</td></tr><tr><td>LONGITUDE: -57.785</td></tr><tr><td>STUDY NAME: FALKLAND ISLANDS 2600 YEAR POLLEN AND CHARCOAL DATA</td></tr><tr><td></td></tr><tr><td><a href="https://www.ncdc.noaa.gov/cdo/f?P=519:1:::::P1_STUDY_ID,P1_SITE_ID:19764,56719">Access Data</a></td></tr></table>]]></description>
+		<Point>
+			<coordinates>-57.785,-51.69099979883324,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
