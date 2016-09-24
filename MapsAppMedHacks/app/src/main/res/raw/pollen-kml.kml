@@ -13,7 +13,6 @@
 	<Placemark id="2">
 		<name>KUISEB RIVER BASIN</name>
 		<description><![CDATA[<table><tr><td>NETWORK: POLLEN</td></tr><tr><td>INVESTIGATOR: SCOTT, L.</td></tr><tr><td>LATITUDE: -23.4167</td></tr><tr><td>LONGITUDE: 15.25</td></tr><tr><td>STUDY NAME: KUISEB RIVER BASIN, NAMIBIA 2000 YEAR HYRAX MIDDEN POLLEN DATA</td></tr><tr><td></td></tr><tr><td><a href="https://www.ncdc.noaa.gov/cdo/f?P=519:1:::::P1_STUDY_ID,P1_SITE_ID:13154,53232">Access Data</a></td></tr></table>]]></description>
-		<gx:balloonVisibility>1</gx:balloonVisibility>
 		<Point>
 			<coordinates>15.25,-23.41669985918327,0</coordinates>
 		</Point>

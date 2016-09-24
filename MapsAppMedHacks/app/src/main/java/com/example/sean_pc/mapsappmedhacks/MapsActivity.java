@@ -9,12 +9,13 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.kml.KmlContainer;
 import com.google.maps.android.kml.KmlLayer;
-<<<<<<< HEAD
+
 import com.google.maps.android.kml.KmlPlacemark;
 
-=======
 import com.google.maps.android.kml.*;
->>>>>>> dfc8ce44aa2b6652127f3791213b7a74064d98a9
+
+import static com.example.sean_pc.mapsappmedhacks.R.raw.pollen;
+
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -43,17 +44,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap)   {
         mMap = googleMap;
-<<<<<<< HEAD
+
         KmlLayer layer;
         KmlPlacemark pl;
         // Add a marker in Sydney and move the camera\
-=======
+
 
         // Add a marker in Sydney and move the camera
-        KmlLayer layer= new KmlLayer(googleMap,R.raw.Pollen getApplicationContext());
->>>>>>> dfc8ce44aa2b6652127f3791213b7a74064d98a9
+        //KmlLayer layer= new KmlLayer(googleMap, pollen, getApplicationContext());
+
         try{
-         layer= new KmlLayer(googleMap, R.raw.Pollen, getApplicationContext();
+         layer= new KmlLayer(googleMap, pollen, getApplicationContext());
 
             layer.addLayerToMap();
         }catch(java.io.IOException e){
@@ -83,7 +84,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 //                mMap.addMarker(new MarkerOptions()).getPosition(placemark.getProperty("coordiantes"));
                 mMap.addMarker(new MarkerOptions().position());
-                mMap.
+                //mMap.
             }
         }
         /*
@@ -91,5 +92,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         */
+    }
+    public static void requestGeolocation(){
+        String apiKey  
     }
 }
