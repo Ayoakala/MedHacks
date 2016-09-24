@@ -5,13 +5,11 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.example.sean_pc.mapsappmedhacks"
-        minSdkVersion 9
+        applicationId "com.kiitanakala.med_map"
+        minSdkVersion 23
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
-        multiDexEnabled true
-
     }
     buildTypes {
         release {
@@ -26,8 +24,4 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.2.1'
     compile 'com.google.android.gms:play-services:9.6.1'
-    compile 'com.google.maps.android:android-maps-utils:0.4.+'
-    compile 'com.android.support:design:23.4.0'
-    compile 'com.android.support:multidex:1.0.0'
-
 }
