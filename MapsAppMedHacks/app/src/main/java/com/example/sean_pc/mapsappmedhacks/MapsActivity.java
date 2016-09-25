@@ -31,11 +31,13 @@ import com.google.maps.android.kml.*;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
-
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.example.sean_pc.mapsappmedhacks.R.raw.pollen;
 import static com.example.sean_pc.mapsappmedhacks.R.raw.sulfatedata;
 
+import com.google.android.gms.location.Geofence;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
     private final static int CONNECTION_FAILURE_RESOLUTION_REQUEST = 9000;
@@ -43,6 +45,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private GoogleApiClient mGoogleApiClient;
     public static final String TAG = MapsActivity.class.getSimpleName();
     private LocationRequest mLocationRequest;
+    private ArrayList<MyGeof> a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +63,35 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
                 .setInterval(10 * 1000)        // 10 seconds, in milliseconds
                 .setFastestInterval(1 * 1000); // 1 second, in milliseconds
+        ArrayList<MyGeof>[] a = (ArrayList<MyGeof>[])new ArrayList[7];
+        /* initialize coordinates */
+        MyGeof x = new MyGeof("one",-111.3333001408167,42,1000,250000,(Geofence.GEOFENCE_TRANSITION_ENTER |
+                Geofence.GEOFENCE_TRANSITION_EXIT)); /* id lat long radius exp transition */
+        x.toGeofence();
+
+        MyGeof y = new MyGeof("one",-57.785,-51.69099979883324,1000,250000,(Geofence.GEOFENCE_TRANSITION_ENTER |
+                Geofence.GEOFENCE_TRANSITION_EXIT)); /* id lat long radius exp transition */
+        y.toGeofence();
+
+        MyGeof z = new MyGeof("one",15.25,-23.41669985918327,1000,250000,(Geofence.GEOFENCE_TRANSITION_ENTER |
+                Geofence.GEOFENCE_TRANSITION_EXIT)); /* id lat long radius exp transition */
+        z.toGeofence();
+
+        MyGeof w = new MyGeof("one",28.75,-24.43330014081674,1000,250000,(Geofence.GEOFENCE_TRANSITION_ENTER |
+                Geofence.GEOFENCE_TRANSITION_EXIT)); /* id lat long radius exp transition */
+        w.toGeofence();
+
+        MyGeof zz = new MyGeof("one",0.00000, 6.2718281828,100000,250000,(Geofence.GEOFENCE_TRANSITION_ENTER |
+                Geofence.GEOFENCE_TRANSITION_EXIT)); /* id lat long radius exp transition */
+        zz.toGeofence();
+
+        MyGeof b = new MyGeof("one",-16.1415926, 99.31,1000,80000,(Geofence.GEOFENCE_TRANSITION_ENTER |
+                Geofence.GEOFENCE_TRANSITION_EXIT)); /* id lat long radius exp transition */
+        b.toGeofence();
+
+        MyGeof c = new MyGeof("one",-7.5,154.28219,1000,120000,(Geofence.GEOFENCE_TRANSITION_ENTER |
+                Geofence.GEOFENCE_TRANSITION_EXIT)); /* id lat long radius exp transition */
+        c.toGeofence();
     }
 
 
