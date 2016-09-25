@@ -18,6 +18,7 @@ import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.maps.android.kml.KmlContainer;
@@ -30,6 +31,7 @@ import com.google.maps.android.kml.*;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
+
 
 import static com.example.sean_pc.mapsappmedhacks.R.raw.pollen;
 import static com.example.sean_pc.mapsappmedhacks.R.raw.sulfatedata;
@@ -71,6 +73,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * installed Google Play services and returned to the app.
      */
     @Override
+
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
@@ -187,5 +190,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onLocationChanged(Location location) {
         handleNewLocation(location);
+    }
+    
+    public static void requestGeolocation(){
+        String apiKey  ;
+
     }
 }
