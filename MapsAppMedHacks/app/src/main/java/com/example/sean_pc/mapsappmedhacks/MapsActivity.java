@@ -85,11 +85,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Geofence.GEOFENCE_TRANSITION_EXIT)); /* id lat long radius exp transition */
         zz.toGeofence();
 
-        MyGeof b = new MyGeof("one",-16.1415926, 99.31,1000,80000,(Geofence.GEOFENCE_TRANSITION_ENTER |
+        MyGeof b = new MyGeof("one",-16.1415926, 99.31,80000,80000,(Geofence.GEOFENCE_TRANSITION_ENTER |
                 Geofence.GEOFENCE_TRANSITION_EXIT)); /* id lat long radius exp transition */
         b.toGeofence();
 
-        MyGeof c = new MyGeof("one",-7.5,154.28219,1000,120000,(Geofence.GEOFENCE_TRANSITION_ENTER |
+        MyGeof c = new MyGeof("one",-7.5,154.28219,50000,120000,(Geofence.GEOFENCE_TRANSITION_ENTER |
                 Geofence.GEOFENCE_TRANSITION_EXIT)); /* id lat long radius exp transition */
         c.toGeofence();
     }
