@@ -191,7 +191,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onLocationChanged(Location location) {
         handleNewLocation(location);
     }
-    
+
     public static void requestGeolocation(){
         String apiKey  ;
 
